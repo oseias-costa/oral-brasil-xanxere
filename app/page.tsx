@@ -1,9 +1,13 @@
 "use client";
-import styled from "styled-components"
+import styled from "styled-components";
 import Benefits from "./components/benefits/Benefits";
 import Header from "./components/header/Header";
 import Headline from "./components/headline/Headline";
 import Treatments from "./components/treatments/Treatments";
+import Clinic from "./components/clinic/Clinic";
+import Schedule from "./components/schedule/Schedule";
+import Contact from "./components/contact/Contact";
+import Footer from "./components/footer/Footer";
 
 export default function Home() {
   return (
@@ -12,11 +16,12 @@ export default function Home() {
       <Headline />
       <Benefits />
       <Treatments />
+      <Clinic />
+      <Schedule />
+      <Contact />
+      <Footer />
     </Container>
-  )
+  );
 }
 
-const Container = styled.main`
-
- 
-`
+const Container = styled.main``;
