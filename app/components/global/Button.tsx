@@ -34,4 +34,11 @@ const Container = styled("a")<{ color: string }>`
   &:hover {
     background: var(--color-blue-light);
   }
+
+  @media (max-width: 360px) {
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+    display: block;
+  }
 `;

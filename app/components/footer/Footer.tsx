@@ -1,7 +1,8 @@
 import Image from "next/image";
 import styled from "styled-components";
 import Logo from "@/public/logo-white.png";
-import { footer } from "../global/_data";
+import Location from "@/public/location.png";
+import { contact, footer } from "../global/_data";
 
 export default function Footer() {
   const menuItems = footer.menu.map((item) => {
@@ -16,6 +17,15 @@ export default function Footer() {
     <Container>
       <Image src={Logo} alt="Clínica de Odontologia em Xanxerê/SC" />
       <Menu>{menuItems}</Menu>
+      <BlockRight>
+        <div className="BlockRight__Adress">
+          <Icon
+            src={Location}
+            alt="Endereço Clínica Odontológica Oral Brasil Xanxerê SC"
+          />
+          <p>{contact.contacts.adress.content}</p>
+        </div>
+      </BlockRight>
     </Container>
   );
 }
@@ -26,12 +36,18 @@ const Container = styled.section`
   flex-wrap: wrap;
   padding-top: 63px;
   padding-bottom: 63px;
-  justify-content: center;
+  justify-content: space-around;
 `;
 
 const Menu = styled.div`
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 740px) {
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
 `;
 
 const A = styled.a`
@@ -44,3 +60,16 @@ const A = styled.a`
     color: var(--color-blue-light);
   }
 `;
+
+const BlockRight = styled.div`
+  .BlockRight__Adress {
+    display: flex;
+    p {
+      color: var(--color-white);
+      max-width: 350px;
+      padding-left: 20px;
+    }
+  }
+`;
+
+const Icon = styled(Image)``;

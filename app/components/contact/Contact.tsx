@@ -85,6 +85,13 @@ const ContactItem = styled.div`
   }
 `;
 
-const Img = styled(Image)``;
+const Img = styled(Image)`
+  @media (max-width: 740px) {
+    object-fit: cover;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+`;
 
 const Icon = styled(Image)``;
