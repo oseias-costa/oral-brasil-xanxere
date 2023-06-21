@@ -13,15 +13,15 @@ export const header = {
   menu: [
     {
       text: "TRATAMENTOS",
-      link: "#",
+      link: "#tratamentos",
     },
     {
       text: "SOBRE A CLÍNICA",
-      link: "#",
+      link: "#sobre-a-clinica",
     },
     {
       text: "CONTATO",
-      link: "#",
+      link: "#contato",
     },
   ],
 };

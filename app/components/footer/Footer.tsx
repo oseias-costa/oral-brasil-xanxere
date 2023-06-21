@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styled from "styled-components";
-import Logo from "@/public/logo-white.png";
+import Logo from "@/public/logo-white.svg";
 import Location from "@/public/location.png";
 import { contact, footer } from "../global/_data";
 

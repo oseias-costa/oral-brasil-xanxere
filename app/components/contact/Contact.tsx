@@ -6,7 +6,7 @@ import { contact } from "../global/_data";
 export default function Contact() {
   return (
     <>
-      <Container>
+      <Container id="contato">
         <Contacts>
           <h4>{contact.subtitle}</h4>
           <h2>{contact.title}</h2>
@@ -63,6 +63,8 @@ const Contacts = styled.div`
   @media (max-width: 740px) {
     padding-top: 0px;
     padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 `;
 

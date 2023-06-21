@@ -19,6 +19,8 @@ const Container = styled.section`
   align-items: center;
   padding-top: 63px;
   padding-bottom: 63px;
+  padding-left: 20px;
+  padding-right: 20px;
   text-align: center;
 
   .Schedule__Title {

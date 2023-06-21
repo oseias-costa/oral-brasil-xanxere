@@ -1,5 +1,5 @@
 "use client";
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
 * {
@@ -9,6 +9,11 @@ export const GlobalStyle = createGlobalStyle`
   list-style: none;
   text-decoration: none;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+main {
+  overflow-y: scroll;
   scroll-behavior: smooth;
 }
 
@@ -49,4 +54,4 @@ h4 {
 p {
   color: var(--color-gray-text);
 }
-`
+`;
