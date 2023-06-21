@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { whatsAppNum } from "./_data";
 
 export default function Button({
   text,
@@ -7,7 +8,11 @@ export default function Button({
   text: string;
   color: string;
 }) {
-  return <Container color={color}>{text}</Container>;
+  return (
+    <Container href={whatsAppNum} color={color}>
+      {text}
+    </Container>
+  );
 }
 
 const Container = styled("a")<{ color: string }>`
@@ -32,7 +37,8 @@ const Container = styled("a")<{ color: string }>`
   transition: 0.2s linear;
 
   &:hover {
-    background: var(--color-blue-light);
+    background-color: var(--color-blue-light);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 
   @media (max-width: 360px) {

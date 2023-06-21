@@ -59,6 +59,10 @@ const A = styled.a`
   &:hover {
     color: var(--color-blue-light);
   }
+
+  @media (max-width: 740px) {
+    margin-left: 0px;
+  }
 `;
 
 const BlockRight = styled.div`
@@ -69,6 +73,13 @@ const BlockRight = styled.div`
       max-width: 350px;
       padding-left: 20px;
     }
+  }
+
+  @media (max-width: 740px) {
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
   }
 `;
 

@@ -129,3 +129,5 @@ export const footer = {
     },
   ],
 };
+
+export const whatsAppNum = "";

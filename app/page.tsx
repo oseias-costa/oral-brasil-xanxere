@@ -8,10 +8,12 @@ import Clinic from "./components/clinic/Clinic";
 import Schedule from "./components/schedule/Schedule";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
+import Whatsapp from "./components/whatsapp/Whatsapp";
 
 export default function Home() {
   return (
     <Container>
+      <Whatsapp />
       <Header />
       <Headline />
       <Benefits />

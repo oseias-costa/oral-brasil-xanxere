@@ -31,4 +31,8 @@ const Container = styled.div`
     max-width: 700px;
     margin: 0 auto;
   }
+
+  @media (max-width: 740px) {
+    margin-top: 0;
+  }
 `;

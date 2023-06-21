@@ -24,7 +24,7 @@ const Container = styled.section`
   text-align: center;
 
   .Schedule__Title {
-    font-size: 36px;
+    font-size: 48px;
   }
 
   .Schedule__Content {
