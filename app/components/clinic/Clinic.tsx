@@ -17,7 +17,7 @@ const Container = styled.div`
   text-align: center;
   margin-top: 60px;
   padding-top: 60px;
-  margin-bottom: 60px;
+  padding-bottom: 60px;
   background-color: var(--color-gray-block);
   padding-left: 20px;
   padding-right: 20px;

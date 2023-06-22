@@ -130,4 +130,4 @@ export const footer = {
   ],
 };
 
-export const whatsAppNum = "";
+export const whatsAppNum = "https://wa.me/";

@@ -45,7 +45,7 @@ export default function Contact() {
         width="100%"
         height="300"
         loading="lazy"
-        style={{ padding: "20px" }}
+        style={{ padding: "20px", paddingTop: "0px" }}
       ></iframe>
     </>
   );
