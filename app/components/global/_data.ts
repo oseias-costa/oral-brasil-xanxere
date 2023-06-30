@@ -130,4 +130,5 @@ export const footer = {
   ],
 };
 
-export const whatsAppNum = "https://wa.me/5549936189333";
+export const whatsAppNum =
+  "https://wa.me/5549936189333?text=Ol%C3%A1%2C+vim+do+site+e+gostaria+de+agendar+uma+consulta.";

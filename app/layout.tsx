@@ -1,6 +1,8 @@
 import StyledComponentsRegistry from "./lib/registry";
 import { Montserrat } from "next/font/google";
 import { GlobalStyle } from "./GlobalStyle";
+import Google from "./components/global/Google";
+import GoogleBody from "./components/global/GoogleBody";
 
 export const metadata = {
   title: "Oral Brasil Xanxerê/SC",
@@ -22,8 +24,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <GlobalStyle />
+      <head>
+        <GlobalStyle />
+        <Google />
+      </head>
       <body className={`${montserrat.variable}`}>
+        <GoogleBody />
         <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
       </body>
     </html>

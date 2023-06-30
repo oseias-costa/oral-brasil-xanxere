@@ -6,8 +6,8 @@ import Image from "next/image";
 export default function Galery() {
   return (
     <Container>
-      <Img src={Img1} alt="" />
-      <Img src={Img2} alt="" />
+      <Img src={Img1} alt="Clínica Odontológica em Xanxerê - SC" />
+      <Img src={Img2} alt="Melhor clínica Odontológica em Xanxerê é a Oral Brasil" />
     </Container>
   );
 }
