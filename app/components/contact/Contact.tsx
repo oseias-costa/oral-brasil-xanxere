@@ -41,7 +41,7 @@ export default function Contact() {
         />
       </Container>
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.799035982935!2d-52.40732906070909!3d-26.87812529185563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e4c3cab7bcfddd%3A0x7456a97d37330353!2sR.%20Rui%20Barbosa%2C%20226%20-%20Centro%2C%20Xanxer%C3%AA%20-%20SC%2C%2089820-000!5e0!3m2!1spt-BR!2sbr!4v1687291999325!5m2!1spt-BR!2sbr"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.78713238407!2d-52.40463699999999!3d-26.878503399999992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e4c3cac7e44303%3A0x4508a85f3fd1238c!2sR.%20Rui%20Barbosa%2C%20266%20-%20Centro%2C%20Xanxer%C3%AA%20-%20SC%2C%2089820-000!5e0!3m2!1spt-BR!2sbr!4v1691613964520!5m2!1spt-BR!2sbr"
         width="100%"
         height="300"
         loading="lazy"
