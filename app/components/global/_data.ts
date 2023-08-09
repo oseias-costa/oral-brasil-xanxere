@@ -102,7 +102,7 @@ export const contact = {
     adress: {
       item: "ENDEREÇO",
       content:
-        "R. Rui Barbosa, 226 - Sala 101, Centro, Xanxerê -SC, Cep 89820-000",
+        "R. Rui Barbosa, 266 - Sala 101, Centro, Xanxerê -SC, Cep 89.820-000",
       icon: Location,
     },
     phone: {
