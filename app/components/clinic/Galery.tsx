@@ -1,13 +1,36 @@
 import styled from "styled-components";
-import Img1 from "@/public/img1.png";
-import Img2 from "@/public/img2.png";
 import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Keyboard, Mousewheel, Navigation, Pagination } from "swiper";
+import { photos } from "./data-images";
+
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "./swiper-styles.css";
 
 export default function Galery() {
+  const renderPhotos = photos.map((item) => {
+    return (
+      <SwiperSlide key={item.id}>
+        <Img src={item.image} alt={item.alt} />
+        <Img src={item.image2} alt={item.alt2} />
+      </SwiperSlide>
+    );
+  });
+
   return (
     <Container>
-      <Img src={Img1} alt="Clínica Odontológica em Xanxerê - SC" />
-      <Img src={Img2} alt="Melhor clínica Odontológica em Xanxerê é a Oral Brasil" />
+      <Swiper
+        speed={600}
+        cssMode={false}
+        navigation={true}
+        pagination={true}
+        mousewheel={true}
+        modules={[Navigation, Pagination, Keyboard, Mousewheel]}
+      >
+        {renderPhotos}
+      </Swiper>
     </Container>
   );
 }
@@ -17,11 +40,13 @@ const Container = styled.section`
 `;
 
 const Img = styled(Image)`
+  width: 531px;
+  height: 300px;
   margin: 5px;
 
   @media (max-width: 740px) {
     object-fit: cover;
-    width: 100%;
-    margin: 0px;
+    width: 318px;
+    height: 180px;
   }
 `;
