@@ -15,7 +15,7 @@ export default function Footer() {
 
   const dataFooter = footer.data.map(item => {
     return(
-      <DataFooter>
+      <DataFooter key={item.text}>
         <DataFooterText>{item.text}:</DataFooterText>
         <p>{item.value}</p>
       </DataFooter>
