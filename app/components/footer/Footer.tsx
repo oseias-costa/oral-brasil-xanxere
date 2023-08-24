@@ -13,6 +13,15 @@ export default function Footer() {
     );
   });
 
+  const dataFooter = footer.data.map(item => {
+    return(
+      <DataFooter>
+        <DataFooterText>{item.text}:</DataFooterText>
+        <p>{item.value}</p>
+      </DataFooter>
+    )
+  })
+
   return (
     <Container>
       <Image src={Logo} alt="Clínica de Odontologia em Xanxerê/SC" />
@@ -25,6 +34,7 @@ export default function Footer() {
           />
           <p>{contact.contacts.adress.content}</p>
         </div>
+        <div>{dataFooter}</div>
       </BlockRight>
     </Container>
   );
@@ -68,6 +78,8 @@ const A = styled.a`
 const BlockRight = styled.div`
   .BlockRight__Adress {
     display: flex;
+    padding-bottom: 20px;
+
     p {
       color: var(--color-white);
       max-width: 350px;
@@ -84,3 +96,16 @@ const BlockRight = styled.div`
 `;
 
 const Icon = styled(Image)``;
+
+const DataFooter = styled.div`
+  display: flex;
+  font-size: 14px;
+
+  p {
+    color: #fff;
+  }
+`
+
+const DataFooterText = styled.p`
+  padding-right: 10px;
+`

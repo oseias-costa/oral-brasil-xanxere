@@ -128,6 +128,16 @@ export const footer = {
       link: "#sobre-a-clinica",
     },
   ],
+  data: [
+    {
+      text: 'CNPJ',
+      value: '50.414.657/0001-73'
+    },
+    {
+      text: 'Razão social',
+      value: 'XANXERE ODONTOLOGIA LTDA'
+    },
+  ]
 };
 
 export const whatsAppNum =
